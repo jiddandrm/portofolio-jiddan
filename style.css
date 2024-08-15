@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 html {
@@ -132,18 +133,6 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
 }
 
 /* SECTIONS */
@@ -395,7 +384,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -429,4 +418,42 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* DARK MODE STYLES */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .nav-links a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .section__text p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .details-container {
+  background: #1e1e1e;
+  border-color: #333333;
+}
+
+body.dark-mode .project-btn {
+  color: #e0e0e0;
+  border-color: #333333;
+}
+
+body.dark-mode .contact-info-upper-container {
+  border: #333333 0.1rem solid;
+  background: #1e1e1e;
+}
+
+body.dark-mode .contact-info-container p {
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-color-1 {
+  background: #333
 }
